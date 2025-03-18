@@ -18,9 +18,5 @@ public class Retweet implements Publicacion{
 	public boolean esRetweet() {
 		return true;
 	}
-	
-	public boolean cumple(Tweet t) {
-		return this.tweetOrigen.equals(t);
-	}
 
 }
