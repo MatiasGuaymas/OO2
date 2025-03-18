@@ -10,4 +10,8 @@ public class Tweet implements Publicacion{
 	public String getTexto() {
 		return this.texto;
 	}
+	
+	public boolean esRetweet() {
+		return false;
+	}
 }

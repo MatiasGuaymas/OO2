@@ -2,6 +2,7 @@ package ar.edu.unlp.info.oo1._Ejercicio1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Usuario {
 	private String screenName;
@@ -10,10 +11,6 @@ public class Usuario {
 	public Usuario (String screenName) {
 		this.screenName = screenName;
 		this.publicaciones = new ArrayList<Publicacion>();
-	}
-	
-	public String getScreenName() {
-		return this.screenName;
 	}
 	
 	public Publicacion postearTweet(String texto) {
@@ -35,6 +32,10 @@ public class Usuario {
 		return ret;
 	}
 	
+	public String getScreenName() {
+		return this.screenName;
+	}
+	
 	public void eliminarPublicaciones() {
 		this.publicaciones.clear();
 	}
@@ -42,4 +43,12 @@ public class Usuario {
 	public List<Publicacion> getPublicaciones() {
 		return this.publicaciones;
 	}
+	
+	public List<Tweet> getTweets() {
+		return this.publicaciones.stream().filter(p -> !p.esRetweet()).map(p -> (Tweet) p).collect(Collectors.toList());
+	}
+	
+	public void removerRetweets(List<Tweet> tweets) {
+        this.publicaciones.removeIf(p -> p.esRetweet() && tweets.contains(((Retweet) p).getTweetOrigen()));
+    }
 }

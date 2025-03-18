@@ -8,12 +8,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class TwitterTest {
-	private Twitter twitter;
+	private RepositorioDeUsuarios twitter;
 	private Usuario user;
 	
 	@BeforeEach
 	public void setUp() {
-		twitter = new Twitter();
+		twitter = new RepositorioDeUsuarios();
 		user = twitter.crearUsuario("Juan");
 	}
 	

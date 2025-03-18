@@ -7,27 +7,40 @@ import org.junit.jupiter.api.Test;
 
 public class TijeraTest {
 	private Tijera tijera;
-	private Papel papel;
-	private Piedra piedra;
-	private Lagarto lagarto;
-	private Spock spock;
 	
 	@BeforeEach
 	public void setUp() {
 		tijera = new Tijera();
-		papel = new Papel();
-		piedra = new Piedra();
-		lagarto = new Lagarto();
-		spock = new Spock();
 	}
 	
 	@Test
 	public void testJugarContra() {
-		assertEquals("Gana Tijera", tijera.jugarContra(papel));
 		assertEquals("Empate", tijera.jugarContra(tijera));
-		assertEquals("Gana Piedra", tijera.jugarContra(piedra));
-		assertEquals("Gana Tijera", tijera.jugarContra(lagarto));
-		assertEquals("Gana Spock", tijera.jugarContra(spock));
+	}
+	
+	@Test
+	public void testJugarContraPiedra() {
+		assertEquals("Gana Piedra", tijera.jugarContraPiedra());
+	}
+
+	@Test
+	public void testJugarContraPapel() {
+		assertEquals("Gana Tijera", tijera.jugarContraPapel());
+	}
+
+	@Test
+	public void testJugarContraTijera() {
+		assertEquals("Empate", tijera.jugarContraTijera());
+	}
+
+	@Test
+	public void testJugarContraLagarto() {
+		assertEquals("Gana Tijera", tijera.jugarContraLagarto());
+	}
+
+	@Test
+	public void testJugarContraSpock() {
+		assertEquals("Gana Spock", tijera.jugarContraSpock());
 	}
 
 }

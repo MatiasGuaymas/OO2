@@ -3,10 +3,10 @@ package ar.edu.unlp.info.oo1._Ejercicio1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Twitter {
+public class RepositorioDeUsuarios {
 	private List<Usuario> usuarios;
 	
-	public Twitter () {
+	public RepositorioDeUsuarios () {
 		this.usuarios = new ArrayList<Usuario>();
 	}
 	
@@ -23,17 +23,13 @@ public class Twitter {
 		return this.usuarios.stream().anyMatch(usuario -> usuario.getScreenName().equals(screenName));
 	}
 	
-	public Publicacion postearTweet (Usuario user, String texto) {
-		return user.postearTweet(texto);
-	}
-	
-	public Publicacion repostearTweet (Usuario user, Tweet tweetOrigen) {
-		return user.repostearTweet(tweetOrigen);
-	}
-	
 	public void eliminarUsuario (Usuario user) {
-		user.eliminarPublicaciones();
-		this.usuarios.remove(user);
+		if (user!= null && existeUsuario(user.getScreenName())) {
+			List <Tweet> lisTweets = user.getTweets(); 
+			this.usuarios.stream().forEach(u -> u.removerRetweets(lisTweets));
+			user.eliminarPublicaciones();
+			this.usuarios.remove(user);
+		}
 	}
 	
 	public List<Usuario> getUsuarios() {
