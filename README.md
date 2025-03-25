@@ -11,6 +11,8 @@
 ### Cuadernillo de Actividades PDF [*](https://docs.google.com/document/d/1lUh8xz8foVFP4Y-gOHUkTNdBLmdag278sfaSR8iMooA/edit?tab=t.0#heading=h.lde58ey8iu17)
 ### [Bad Smells - Refactorings](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Bad%20Smells-Refactorings.pdf)
 
+> [**Ejercicio 1: Algo huele mal**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio01.md)
+
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.
 * Seguirme en GitHub.
