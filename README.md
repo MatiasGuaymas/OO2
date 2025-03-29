@@ -12,6 +12,7 @@
 ### Cuadernillo de Actividades PDF [*](https://docs.google.com/document/d/1lUh8xz8foVFP4Y-gOHUkTNdBLmdag278sfaSR8iMooA/edit?tab=t.0#heading=h.lde58ey8iu17)
 
 > [**Ejercicio 1: Algo huele mal**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio01.md)
+>
 > [**Ejercicio 2**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio02.md)
 
 ## Cómo contribuir
