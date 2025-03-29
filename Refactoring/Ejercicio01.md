@@ -2,7 +2,7 @@
 
 ## 1.1 Protocolo de Cliente
 
-### Problema: Nombres poco explicativos en métodos
+### Bad Smell: Nombres poco explicativos en métodos
 Los siguientes métodos tienen nombres poco descriptivos (*code smell*):  
 - `public double lmtCrdt()`  
 - `protected double mtFcE(LocalDate f1, LocalDate f2)`  
@@ -18,7 +18,7 @@ protected double getFacturacionEntreFechas(LocalDate f1, LocalDate f2) { ... }
 private double getMontoCobradoEntreFechas(LocalDate f1, LocalDate f2) { ... }
 ```
 
-### Problema: Nombres de parámetros poco explicativos
+### Bad Smell: Nombres de parámetros poco explicativos
 Los parámetros `f1` y `f2` en los métodos no describen su propósito.
 
 ### Solución: Renombrar parámetros
@@ -33,17 +33,16 @@ private double getMontoCobradoEntreFechas(LocalDate fechaInicio, LocalDate fecha
 
 ## 1.2 Participación en proyectos 
 
-### Problema: *Feature Envy* y Mala Asignación de Responsabilidad
+### Bad Smell: *Feature Envy* y Mala Asignación de Responsabilidad
 El método `participaEnProyecto(Persona p)` en la clase `Persona` debería estar en la clase `Proyecto`, ya que es esta última la responsable de evaluar la participación.
 
 ### Solución: Aplicar *Move Method*
 Mover el método a la clase `Proyecto`.
 
-### Problema: Rompe el encapsulamiento
+### Bad Smell: Rompe el encapsulamiento
 En la clase `Persona`, la variable de instancia `id` es pública, lo que viola el encapsulamiento.
 
-### Solución propuesta
-Declarar `id` como privada:  
+### Solución: Aplicar *Encapsulate Field*
 ```java
 private int id;
 ```
@@ -71,7 +70,7 @@ public void imprimirValores() {
 }
 ```
 
-### Problema: Nombre de método poco explicativo
+### Bad Smell: Nombre de método poco explicativo
 El nombre `imprimirValores()` no refleja claramente lo que hace.
 
 ### Solución: Aplicar *Rename Method*
@@ -79,7 +78,7 @@ El nombre `imprimirValores()` no refleja claramente lo que hace.
 public void imprimirPromedioEdadYSalario() { ... }
 ```
 
-### Problema: *Reinventando la rueda* en el cálculo de edades
+### Bad Smell: *Reinventando la rueda* en el cálculo de edades
 El bucle manual para sumar edades puede reemplazarse con una solución más moderna usando streams.
 
 ### Solución: Aplicar *Replace Loop with Pipeline*
@@ -100,7 +99,7 @@ public void imprimirPromedioEdadYSalario() {
 }
 ```
 
-### Problema: *Reinventando la ruedad* en el cálculo de salarios
+### Bad Smell: *Reinventando la rueda* en el cálculo de salarios
 El bucle para sumar salarios también puede optimizarse.
 
 ### Solución: Aplicar *Replace Loop with Pipeline*
@@ -117,7 +116,7 @@ public void imprimirPromedioEdadYSalario() {
 }
 ```
 
-### Problema: Variables y cálculos redundantes
+### Bad Smell: Variables y cálculos redundantes
 Las variables `totalEdades` y `promedioEdades` se calculan de forma innecesaria.
 
 ### Solución: Eliminar variables redundantes
@@ -132,7 +131,7 @@ public void imprimirPromedioEdadYSalario() {
 }
 ```
 
-### Problema: *Long Method*
+### Bad Smell: *Long Method*
 El método `imprimirPromedioEdadYSalario()` hace demasiadas cosas.
 
 ### Solución: Aplicar *Extract Method* para el cálculo de salarios
@@ -171,7 +170,7 @@ public double calcularPromedioEdad() {
 }
 ```
 
-### Problema: *Long Method* y uso de variables temporales
+### Bad Smell: *Long Method* y uso de variables temporales
 El método aún puede simplificarse eliminando las variables temporales.
 
 ### Solución: Aplicar *Replace Temp with Query*
