@@ -122,7 +122,7 @@ public class Document {
 }
 ```
 
-### Bad Smell: Inline Variabl
+### Bad Smell: Inline Variable
 Los métodos `characterCount` y `calculateAvg` aún puede simplificarse eliminando las variables temporales.
 
 ### Solución: Aplicar *Replace Temp with Query*
