@@ -125,7 +125,7 @@ public class Document {
 ### Bad Smell: Uso de variables temporales innecesarias
 Los métodos `characterCount` y `calculateAvg` aún puede simplificarse eliminando las variables temporales.
 
-### Solución: Aplicar *Replace Temp with Query*
+### Solución: Aplicar *Inline Variable*
 ```java
 public class Document {
     private List<String> words;
