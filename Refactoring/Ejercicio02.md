@@ -145,16 +145,12 @@ public class EmpleadoPasante extends Empleado{
 ### Bad Smell: Duplicated Code
 Las clases `EmpleadoTemporario`, `EmpleadoPlanta`, `EmpleadoPasante` siguen contando con los mismos métodos.
 
-### Solución: Aplicar *Pull Up Method*
+### Solución: Aplicar *Extract Method*
 ```java
 public abstract class Empleado {
     public String nombre;
     public String apellido;
     public double sueldoBasico = 0;
-
-    public double sueldo() {
-        return this.sueldoBasico - (this.sueldoBasico * 0.13);
-    }
 }
 
 public class EmpleadoTemporario extends Empleado{
@@ -163,22 +159,106 @@ public class EmpleadoTemporario extends Empleado{
     // ......
     
     public double sueldo() {
-        return super.sueldo() + (this.horasTrabajadas * 500) - (this.cantidadHijos * 1000);
+        return this.sueldoConDescuento() + this.horasTrabajadas() + this.asignacionFamiliar();
     }
-}
 
+    private double sueldoConDescuento() {
+        return this.sueldoBasico - (this.sueldoBasico * 0.13);
+    }
+
+    private double horasTrabajadas() {
+        return this.horasTrabajas * 500;
+    }
+
+    private double aportes() {
+        return this.sueldoBasico * 0.13;
+    }
+    
+}
 
 public class EmpleadoPlanta extends Empleado{
     public int cantidadHijos = 0;
     // ......
     
     public double sueldo() {
-        return super.sueldo() + (this.cantidadHijos * 2000)
+        return this.sueldoConDescuento() + this.asignacionFamiliar();
+    }
+
+    private double sueldoConDescuento() {
+        return this.sueldoBasico - (this.sueldoBasico * 0.13);
+    }
+
+    private double aportes() {
+        return this.sueldoBasico * 0.13;
     }
 }
 
 public class EmpleadoPasante extends Empleado{
     // ......
+    
+    public double sueldo() {
+        return this.sueldoConDescuento();
+    }
+
+    private double sueldoConDescuento() {
+        return this.sueldoBasico - (this.sueldoBasico * 0.13);
+    }
+
+}
+```
+
+### Bad Smell: Duplicated Code
+Las clases `EmpleadoTemporario`, `EmpleadoPlanta`, `EmpleadoPasante` siguen contando con los mismos métodos: `sueldo` y `sueldoConDescuento` .
+
+### Solución: Aplicar *Pull Up Method*
+```java
+public abstract class Empleado {
+    public String nombre;
+    public String apellido;
+    public double sueldoBasico = 0;
+
+    public double sueldo() {
+        return this.sueldoConDescuento();
+    }
+
+    private double sueldoConDescuento() {
+        return this.sueldoBasico - (this.sueldoBasico * 0.13);
+    }
+
+}
+
+public class EmpleadoTemporario extends Empleado{
+    public double horasTrabajadas = 0;
+    public int cantidadHijos = 0;
+    // ......
+    
+    public double sueldo() {
+        return super.sueldo() + this.horasTrabajadas() + this.asignacionFamiliar();
+    }
+
+    private double horasTrabajadas() {
+        return this.horasTrabajas * 500;
+    }
+
+    private double asignacionFamiliar() {
+        return (this.cantidadHijos * 1000);
+    }
+    
+}
+
+public class EmpleadoPlanta extends Empleado{
+    public int cantidadHijos = 0;
+    // ......
+    
+    public double sueldo() {
+        return super.sueldo() + this.asignacionFamiliar();
+    }
+
+}
+
+public class EmpleadoPasante extends Empleado{
+    // ......
+
 }
 ```
 
@@ -186,18 +266,25 @@ public class EmpleadoPasante extends Empleado{
 La clase `EmpleadoPasante` es pequeña, pero por un tema de expresividad y de diseño, se quiere dejar dejar la diferenciación entre `Empleado` y `EmpleadoPasante`.
 
 ### Bad Smell: Duplicated Code
-La clase `EmpleadoTemporario` y `EmpleadoPlanta` comparten la variable de instancia `cantidadHijos`, pero considero que no vale la pena generar otra super clase, y mover dicho atributo a la misma, por una sola variable.
+La clase `EmpleadoTemporario` y `EmpleadoPlanta` comparten la variable de instancia `cantidadHijos`, pero considero que no vale la pena generar otra super clase, y mover dicho atributo a la misma, por una sola variable y un metodo.
 
 ### Bad Smell: Rompe el encapsulamiento
 En la clase `Empleado`, `EmpleadoTemporario` y `EmpleadoPlanta` las variables de instancias son públicas, lo que viola el encapsulamiento.
 
 ### Solución: Aplicar *Encapsulate Field* 
-
 ```java
 public abstract class Empleado {
     private String nombre;
     private String apellido;
     private double sueldoBasico = 0;
+
+    public double sueldo() {
+        return this.sueldoConDescuento();
+    }
+
+    private double sueldoConDescuento() {
+        return this.sueldoBasico - (this.sueldoBasico * 0.13);
+    }
 
     public String getNombre() {
         return this.nombre;
@@ -223,16 +310,24 @@ public abstract class Empleado {
         this.sueldoBasico = sueldoBasico;
     }
 
-    public double sueldo() {
-        return this.sueldoBasico - (this.sueldoBasico * 0.13);
-    }
 }
 
-public class EmpleadoTemporario extends Empleado {
+public class EmpleadoTemporario extends Empleado{
     private double horasTrabajadas = 0;
     private int cantidadHijos = 0;
-    
     // ......
+    
+    public double sueldo() {
+        return super.sueldo() + this.horasTrabajadas() + this.asignacionFamiliar();
+    }
+
+    private double horasTrabajadas() {
+        return this.horasTrabajas * 500;
+    }
+
+    private double asignacionFamiliar() {
+        return (this.cantidadHijos * 1000);
+    }
 
     public double getHorasTrabajadas() {
         return this.horasTrabajadas;
@@ -249,16 +344,16 @@ public class EmpleadoTemporario extends Empleado {
     public void setCantidadHijos(int cantidadHijos) {
         this.cantidadHijos = cantidadHijos;
     }
-
-    public double sueldo() {
-        return super.sueldo() +​ (this.horasTrabajadas * 500) +​ (this.cantidadHijos * 1000);
-    }
+    
 }
 
-public class EmpleadoPlanta extends Empleado {
+public class EmpleadoPlanta extends Empleado{
     private int cantidadHijos = 0;
-    
     // ......
+    
+    public double sueldo() {
+        return super.sueldo() + this.asignacionFamiliar();
+    }
 
     public int getCantidadHijos() {
         return this.cantidadHijos;
@@ -268,13 +363,9 @@ public class EmpleadoPlanta extends Empleado {
         this.cantidadHijos = cantidadHijos;
     }
 
-    public double sueldo() {
-        return super.sueldo() + (this.cantidadHijos * 2000);
-    }
 }
 
-public class EmpleadoPasante extends Empleado {
-    
+public class EmpleadoPasante extends Empleado{
     // ......
 
 }
@@ -290,6 +381,14 @@ public abstract class Empleado {
     private String apellido;
     private double sueldoBasico = 0;
 
+    public double calcularSueldo() {
+        return this.sueldoConDescuento();
+    }
+
+    private double sueldoConDescuento() {
+        return this.sueldoBasico - (this.sueldoBasico * 0.13);
+    }
+
     public String getNombre() {
         return this.nombre;
     }
@@ -314,16 +413,24 @@ public abstract class Empleado {
         this.sueldoBasico = sueldoBasico;
     }
 
-    public double calcularSueldo() {
-        return this.sueldoBasico - (this.sueldoBasico * 0.13);
-    }
 }
 
-public class EmpleadoTemporario extends Empleado {
+public class EmpleadoTemporario extends Empleado{
     private double horasTrabajadas = 0;
     private int cantidadHijos = 0;
-    
     // ......
+    
+    public double calcularSueldo() {
+        return super.calcularSueldo() + this.horasTrabajadas() + this.asignacionFamiliar();
+    }
+
+    private double horasTrabajadas() {
+        return this.horasTrabajas * 500;
+    }
+
+    private double asignacionFamiliar() {
+        return (this.cantidadHijos * 1000);
+    }
 
     public double getHorasTrabajadas() {
         return this.horasTrabajadas;
@@ -340,16 +447,16 @@ public class EmpleadoTemporario extends Empleado {
     public void setCantidadHijos(int cantidadHijos) {
         this.cantidadHijos = cantidadHijos;
     }
-
-    public double calcularSueldo() {
-        return super.calcularSueldo() +​ (this.horasTrabajadas * 500) +​ (this.cantidadHijos * 1000);
-    }
+    
 }
 
-public class EmpleadoPlanta extends Empleado {
+public class EmpleadoPlanta extends Empleado{
     private int cantidadHijos = 0;
-    
     // ......
+    
+    public double calcularSueldo() {
+        return super.calcularSueldo() + this.asignacionFamiliar();
+    }
 
     public int getCantidadHijos() {
         return this.cantidadHijos;
@@ -359,13 +466,9 @@ public class EmpleadoPlanta extends Empleado {
         this.cantidadHijos = cantidadHijos;
     }
 
-    public double calcularSueldo() {
-        return super.calcularSueldo() + (this.cantidadHijos * 2000);
-    }
 }
 
-public class EmpleadoPasante extends Empleado {
-    
+public class EmpleadoPasante extends Empleado{
     // ......
 
 }
@@ -937,6 +1040,65 @@ public class Cliente {
     public String getDireccionFormateada() {
 	    return this.direccion.toString();
     }
+}
+
+public class Direccion {
+    private String localidad;
+    private String calle;
+    private int numero;
+    private String departamento;
+
+    public String getLocalidad() {
+        return localidad;
+    }
+
+    public String getCalle() {
+        return calle;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public String getDepartamento() {
+        return departamento;
+    }
+
+    public void setLocalidad(String localidad) {
+        this.localidad = localidad;
+    }
+
+    public void setCalle(String calle) {
+        this.calle = calle;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
+    }
+
+    @Override
+    public String toString() {
+        return this.localidad + ", " + this.calle + ", " + this.numero + ", " + this.departamento;
+    }
+}
+```
+
+### Bad Smell: Middle Man
+La clase `Cliente`, solo actúa como intermediario entre la clase `Supermercado` y la clase `Direccion`.
+
+### Solución: Aplicar *Remove Middle Man*
+```java
+public class Supermercado {
+    public void notificarPedido(long nroPedido, Direccion direccion) {
+        String notificacion = MessageFormat.format("Estimado cliente, se le informa que hemos recibido su pedido con número {0}, el cual será enviado a la dirección {1}", new Object[] { nroPedido, direccion.toString() });
+
+        // lo imprimimos en pantalla, podría ser un mail, SMS, etc..
+        System.out.println(notificacion);
+  }
 }
 
 public class Direccion {
