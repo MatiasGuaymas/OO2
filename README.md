@@ -15,9 +15,9 @@
 >
 > [**Ejercicio 2**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio02.md)
 >
-> [**Ejercicio 2**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio03.md)
+> [**Ejercicio 3**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio03.md)
 >
-> [**Ejercicio 2**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio04.md)
+> [**Ejercicio 4**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio04.md)
 
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.
