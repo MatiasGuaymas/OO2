@@ -19,6 +19,11 @@
 >
 > [**Ejercicio 4**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio04.md)
 
+## Patrones de diseño
+### Cuadernillo de Actividades PDF [*](https://docs.google.com/document/d/1rK-ZwQNSjzt7lfvTaTGPRCxSj92hN_QhE0vIYjlyek8/edit?tab=t.0)
+
+> [**Ejercicio 1: Friday the 13th en Java-Usando la librería JSON.simple**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/01-Ejercicio1/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/tree/main/UML/Patrones/Ejercicio01)
+
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.
 * Seguirme en GitHub.
