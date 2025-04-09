@@ -23,6 +23,8 @@
 ### Cuadernillo de Actividades PDF [*](https://docs.google.com/document/d/1rK-ZwQNSjzt7lfvTaTGPRCxSj92hN_QhE0vIYjlyek8/edit?tab=t.0)
 
 > [**Ejercicio 1: Friday the 13th en Java-Usando la librería JSON.simple**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/01-Ejercicio1/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/tree/main/UML/Patrones/Ejercicio01)
+>
+> [**Ejercicio 2: Cálculo de sueldos**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/02-Ejercicio2/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio02-UML.png)
 
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.
