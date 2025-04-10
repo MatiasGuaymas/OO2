@@ -27,6 +27,8 @@
 > [**Ejercicio 2: Cálculo de sueldos**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/02-Ejercicio2/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio02-UML.png)
 >
 > [**Ejercicio 3: Media Player**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/03-Ejercicio3/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio3) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio03-UML.png)
+>
+> [**Ejercicio 4: ToDoItem**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/04-Ejercicio4/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio04-UML.png)
 
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.
