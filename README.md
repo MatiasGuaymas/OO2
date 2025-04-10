@@ -25,6 +25,8 @@
 > [**Ejercicio 1: Friday the 13th en Java-Usando la librería JSON.simple**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/01-Ejercicio1/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/tree/main/UML/Patrones/Ejercicio01)
 >
 > [**Ejercicio 2: Cálculo de sueldos**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/02-Ejercicio2/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio02-UML.png)
+>
+> [**Ejercicio 3: Media Player**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/03-Ejercicio3/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio3) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio03-UML.png)
 
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.
