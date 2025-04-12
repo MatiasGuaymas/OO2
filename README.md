@@ -29,6 +29,8 @@
 > [**Ejercicio 3: Media Player**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/03-Ejercicio3/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio3) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio03-UML.png)
 >
 > [**Ejercicio 4: ToDoItem**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/04-Ejercicio4/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio04-UML.png)
+>
+> [**Ejercicio 5: Decodificador de películas**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/05-Ejercicio5/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio05-UML.png)
 
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.
