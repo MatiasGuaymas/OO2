@@ -31,6 +31,8 @@
 > [**Ejercicio 4: ToDoItem**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/04-Ejercicio4/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio04-UML.png)
 >
 > [**Ejercicio 5: Decodificador de películas**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/05-Ejercicio5/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio05-UML.png)
+>
+> [**Ejercicio 6: Excursiones**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/06-Ejercicio6/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio06-UML.png)
 
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.
