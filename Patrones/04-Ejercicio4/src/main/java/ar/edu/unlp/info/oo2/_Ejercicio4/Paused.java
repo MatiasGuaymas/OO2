@@ -8,9 +8,6 @@ public class Paused extends State {
 	public Paused(ToDoItem task) {
 		super(task);
 	}
-
-	@Override
-	public void start() {}
 	
 	@Override
 	public void togglePause() {
@@ -27,11 +24,6 @@ public class Paused extends State {
 	@Override
 	public Duration workedTime() {
 		return Duration.between(this.getTask().getStartDate(), LocalDateTime.now());
-	}
-
-	@Override
-	public void addComment(String comment) {
-		this.getTask().getComments().add(comment);
 	}
 
 }

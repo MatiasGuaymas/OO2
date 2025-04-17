@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 public class CriterioNovedad extends CriterioDeSugerencia {
 	
 	@Override
-	public List<Pelicula> aplicarCriterio(Decodificador decodificador, Predicate<Pelicula> filtro) {
+	protected List<Pelicula> aplicarCriterio(Decodificador decodificador, Predicate<Pelicula> filtro) {
 		return decodificador.getGrilla().stream()
 			.filter(filtro)
 			.sorted((p1, p2) -> Integer.compare(p2.getAnioEstreno(), p1.getAnioEstreno())) // Más nuevo primero

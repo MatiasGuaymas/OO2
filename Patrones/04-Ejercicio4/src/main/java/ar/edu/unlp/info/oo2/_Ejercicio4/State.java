@@ -13,13 +13,15 @@ public abstract class State {
 		return this.task;
 	}
 	
-	public abstract void start();
+	public void start() {};
 	
-	public abstract void togglePause() throws RuntimeException;
+	public abstract void togglePause();
 	
-	public abstract void finish();
+	public void finish() {};
 	
-	public abstract Duration workedTime() throws RuntimeException;
+	public abstract Duration workedTime();
 	
-	public abstract void addComment(String comment);
+	public void addComment(String comment) {
+		this.task.getComments().add(comment);
+	};
 }

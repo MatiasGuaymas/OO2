@@ -10,7 +10,7 @@ public class CriterioPuntaje extends CriterioDeSugerencia{
 	 * dando prioridad a las que tienen mayor puntaje "reversed()", y entre las que empatan, a las más recientes. */
 	
 	@Override
-	public List<Pelicula> aplicarCriterio(Decodificador decodificador, Predicate<Pelicula> filtro) {
+	protected List<Pelicula> aplicarCriterio(Decodificador decodificador, Predicate<Pelicula> filtro) {
 		return decodificador.getGrilla().stream()
 			.filter(filtro)
 			.sorted(Comparator.comparing(Pelicula::getPuntaje).reversed()

@@ -9,9 +9,6 @@ public class InProgress extends State {
 		super(task);
 		this.getTask().setStartDate();
 	}
-	
-	@Override
-	public void start() {}
 
 	@Override
 	public void togglePause() {
@@ -30,9 +27,4 @@ public class InProgress extends State {
 		return Duration.between(this.getTask().getStartDate(), LocalDateTime.now());
 	}
 
-	@Override
-	public void addComment(String comment) {
-		this.getTask().getComments().add(comment);
-	}
-	
 }

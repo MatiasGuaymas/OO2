@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 public class CriterioSimilitud extends CriterioDeSugerencia{
 	
 	@Override
-	public List<Pelicula> aplicarCriterio(Decodificador decodificador, Predicate<Pelicula> filtro) {
+	protected List<Pelicula> aplicarCriterio(Decodificador decodificador, Predicate<Pelicula> filtro) {
 		return decodificador.getReproducidas().stream()
 			.flatMap(pelicula -> pelicula.getSimilares().stream())
 			.filter(filtro)

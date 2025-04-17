@@ -20,16 +20,8 @@ public class Pending extends State {
 	}
 
 	@Override
-	public void finish() {}
-
-	@Override
 	public Duration workedTime() {
 		throw new RuntimeException("El objeto ToDoItem no se encuentra en pause, in-progress o finished");
-	}
-
-	@Override
-	public void addComment(String comment) {
-		this.getTask().getComments().add(comment);
 	}
 
 }
