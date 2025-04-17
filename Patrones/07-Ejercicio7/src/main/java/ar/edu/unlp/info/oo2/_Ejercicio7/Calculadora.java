@@ -5,6 +5,10 @@ public class Calculadora {
 	private EstadoCalculadora estado;
 	
 	public Calculadora() {
+		this.reiniciarCalculadora();
+	}
+	
+	private void reiniciarCalculadora() {
 		this.valorAcumulado = 0;
 		this.estado = new Inicial();
 	}
@@ -26,8 +30,7 @@ public class Calculadora {
      * Pone en cero el valor acumulado y reinicia la calculadora
      */
     public void borrar() {
-    	this.valorAcumulado = 0;
-    	this.estado = new Inicial();
+    	this.reiniciarCalculadora();
     }
 
     /**
