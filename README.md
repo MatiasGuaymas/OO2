@@ -37,6 +37,8 @@
 > [**Ejercicio 7: Calculadora**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/07-Ejercicio7/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio07-UML.png)
 >
 > [**Ejercicio 8: Dispositivo móvil y conexiones**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/08-Ejercicio8/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio08-UML.png)
+>
+> [**Ejercicio 9: Alquiler de automóviles**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/09-Ejercicio9/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio9) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio09-UML.png)
 
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.
