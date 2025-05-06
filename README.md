@@ -39,6 +39,14 @@
 > [**Ejercicio 8: Dispositivo móvil y conexiones**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/08-Ejercicio8/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio08-UML.png)
 >
 > [**Ejercicio 9: Alquiler de automóviles**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/09-Ejercicio9/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio9) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio09-UML.png)
+>
+> [**Ejercicio 10: Mensajero**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/10-Ejercicio10/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio10) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio10-UML.png)
+>
+> [**Ejercicio 13: SubteWay**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/13-Ejercicio13/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio13) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio13-UML.png)
+>
+> [**Ejercicio 16: Filtros de Imágenes**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/16-Ejercicio16/src/main/java/ar/edu/info/oo2/filtros) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio16-UML.png)
+>
+> [**Ejercicio 18: File Manager**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/18-Ejercicio18/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio18-UML.png)
 
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.
