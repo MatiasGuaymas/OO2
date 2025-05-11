@@ -42,9 +42,15 @@
 >
 > [**Ejercicio 10: Mensajero**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/10-Ejercicio10/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio10) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio10-UML.png)
 >
+> [**Ejercicio 11: Topografías**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/11-Ejercicio11/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio11-UML.png)
+>
 > [**Ejercicio 12: FileSystem**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/12-Ejercicio12/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio12-UML.png)
 >
 > [**Ejercicio 13: SubteWay**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/13-Ejercicio13/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio13) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio13-UML.png)
+>
+> [**Ejercicio 14: Préstamos Prendarios**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/14-Ejercicio14/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio14-UML.png)
+>
+> [**Ejercicio 15: Armado de PCs**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/15-Ejercicio15/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio15) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio15-UML.png)
 >
 > [**Ejercicio 16: Filtros de Imágenes**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/16-Ejercicio16/src/main/java/ar/edu/info/oo2/filtros) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio16-UML.png)
 >
