@@ -54,7 +54,11 @@
 >
 > [**Ejercicio 16: Filtros de Imágenes**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/16-Ejercicio16/src/main/java/ar/edu/info/oo2/filtros) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio16-UML.png)
 >
+> [**Ejercicio 17: Acceso a la base de datos**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/17-Ejercicio17/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio17-UML.png)
+>
 > [**Ejercicio 18: File Manager**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/18-Ejercicio18/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio18-UML.png)
+>
+> [**Ejercicio 19: Estación meteorológica**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/19-Ejercicio19/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio19-UML.png)
 >
 > [**Ejercicio 21: Genealogía salvaje**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/21-Ejercicio21/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio21) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio21-UML.png)
 
