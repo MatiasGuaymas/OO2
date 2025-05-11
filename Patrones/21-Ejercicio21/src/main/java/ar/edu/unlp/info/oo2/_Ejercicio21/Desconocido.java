@@ -5,11 +5,11 @@ import java.time.LocalDate;
 public class Desconocido implements IMamifero {
 
 	public String getIdentificador() {
-		return null;
+		return "Desconocido";
 	}
 
 	public String getEspecie() {
-		return null;
+		return "Desconocido";
 	}
 	
 	public LocalDate getFechaNacimiento() {
@@ -17,27 +17,27 @@ public class Desconocido implements IMamifero {
 	}
 
 	public IMamifero getPadre() {
-		return null;
+		return this;
 	}
 	
 	public IMamifero getMadre() {
-		return null;
+		return this;
 	}
 	
-	public Mamifero getAbueloMaterno() {
-		return null;
+	public IMamifero getAbueloMaterno() {
+		return this;
 	}
 
-	public Mamifero getAbuelaMaterna() {
-		return null;
+	public IMamifero getAbuelaMaterna() {
+		return this;
 	}
 
-	public Mamifero getAbueloPaterno() {
-		return null;
+	public IMamifero getAbueloPaterno() {
+		return this;
 	}
 
-	public Mamifero getAbuelaPaterna() {
-		return null;
+	public IMamifero getAbuelaPaterna() {
+		return this;
 	}
 	
 	public void setIdentificador(String id) {}
