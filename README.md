@@ -15,9 +15,9 @@
 >
 > [**Ejercicio 2**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio02.md)
 >
-> [**Ejercicio 3**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio03.md)
+> [**Ejercicio 3: Documentos y estadísticas**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio03.md)
 >
-> [**Ejercicio 4**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio04.md)
+> [**Ejercicio 4: Pedidos**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio04.md)
 
 ## Patrones de diseño
 ### Cuadernillo de Actividades PDF [*](https://docs.google.com/document/d/1rK-ZwQNSjzt7lfvTaTGPRCxSj92hN_QhE0vIYjlyek8/edit?tab=t.0)
@@ -59,6 +59,8 @@
 > [**Ejercicio 18: File Manager**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/18-Ejercicio18/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio18-UML.png)
 >
 > [**Ejercicio 19: Estación meteorológica**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/19-Ejercicio19/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio19-UML.png)
+>
+> [**Ejercicio 20: Construcción de personajes de juegos de rol**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/20-Ejercicio20/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio20-UML.png)
 >
 > [**Ejercicio 21: Genealogía salvaje**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/21-Ejercicio21/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio21) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio21-UML.png)
 
