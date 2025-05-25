@@ -18,6 +18,10 @@
 > [**Ejercicio 3: Documentos y estadísticas**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio03.md)
 >
 > [**Ejercicio 4: Pedidos**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio04.md)
+>
+> [**Ejercicio 5: Facturación de llamadas (incompleto)**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio05.md)
+>
+> [**Ejercicio 6: Árboles binarios**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio06.md)
 
 ## Patrones de diseño
 ### Cuadernillo de Actividades PDF [*](https://docs.google.com/document/d/1rK-ZwQNSjzt7lfvTaTGPRCxSj92hN_QhE0vIYjlyek8/edit?tab=t.0)
