@@ -1,4 +1,4 @@
-# Ejercicio 3
+# Ejercicio 3: Documentos y estadísticas
 
 ### Código original
 ```java

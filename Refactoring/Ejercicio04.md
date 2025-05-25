@@ -1,4 +1,4 @@
-# Ejercicio 4 
+# Ejercicio 4: Pedidos
 
 <a href="https://ibb.co/twQzPTQw"><img src="https://i.ibb.co/kV5J6s5V/UMLEJ4.jpg" alt="UMLEJ4" border="0"></a>
 
@@ -114,12 +114,8 @@
 02:  private Cliente cliente;
 03:  private List<Producto> productos;
 04:  private FormaDePago formaPago;
-05:  public Pedido(Cliente cliente, List<Producto> productos, String formaPago) {
-06:     if (!"efectivo".equals(formaPago)
-07:        && !"6 cuotas".equals(formaPago)
-08:        && !"12 cuotas".equals(formaPago)) {
-09:          throw new Error("Forma de pago incorrecta");
-10:    }
+05:  public Pedido(Cliente cliente, List<Producto> productos, FormaDePago formaPago) {
+06:    this.formaPago = formaPago;
 11:    this.cliente = cliente;
 12:    this.productos = productos;
 13:    this.formaPago = formaPago;
@@ -183,11 +179,7 @@ public class DoceCuotas implements FormaDePago{
 03:  private List<Producto> productos;
 04:  private FormaDePago formaPago;
 05:  public Pedido(Cliente cliente, List<Producto> productos, String formaPago) {
-06:     if (!"efectivo".equals(formaPago)
-07:        && !"6 cuotas".equals(formaPago)
-08:        && !"12 cuotas".equals(formaPago)) {
-09:          throw new Error("Forma de pago incorrecta");
-10:    }
+06:    this.formaPago = formaPago;
 11:    this.cliente = cliente;
 12:    this.productos = productos;
 13:    this.formaPago = formaPago;
@@ -254,11 +246,7 @@ public class DoceCuotas implements FormaDePago{
 03:  private List<Producto> productos;
 04:  private FormaDePago formaPago;
 05:  public Pedido(Cliente cliente, List<Producto> productos, String formaPago) {
-06:     if (!"efectivo".equals(formaPago)
-07:        && !"6 cuotas".equals(formaPago)
-08:        && !"12 cuotas".equals(formaPago)) {
-09:          throw new Error("Forma de pago incorrecta");
-10:    }
+06:    this.formaPago = formaPago;
 11:    this.cliente = cliente;
 12:    this.productos = productos;
 13:    this.formaPago = formaPago;
