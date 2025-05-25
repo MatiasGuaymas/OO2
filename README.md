@@ -68,6 +68,17 @@
 >
 > [**Ejercicio 21: Genealogía salvaje**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/21-Ejercicio21/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio21) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio21-UML.png)
 
+## Explicaciones Semanales
+* [**Explicación Semana 1**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2001%20-%20Semana%2017%20Marzo.txt)
+* [**Explicación Semana 2**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2002%20-%20Semana%2024%20Marzo.pdf)
+* [**Explicación Semana 3**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2003%20-%20Semana%2031%20Marzo.pdf)
+* [**Explicación Semana 4**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2004%20-%20Semana%207%20Abril.pdf)
+* [**Explicación Semana 5**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2005%20-%20Semana%2014%20Abril.pdf)
+* [**Explicación Semana 6**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2006%20-%20Semana%2021%20Abril.pdf)
+* [**Explicación Semana 7**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2007%20-%20Semana%2028%20Abril.pdf)
+* [**Explicación Semana 8**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2008%20-%20Semana%205%20Mayo.pdf)
+* [**Explicación Semana 9**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2009%20-%20Semana%2012%20Mayo.pdf)
+
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.
 * Seguirme en GitHub.
