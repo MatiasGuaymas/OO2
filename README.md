@@ -1,5 +1,7 @@
 <h1 align="center"> Orientación a Objetos 2 </h1>
 
+### [**Modelos de parciales**](https://github.com/MatiasGuaymas/OO2/tree/main/Parciales)
+
 ## Repaso
 ### Cuadernillo de Actividades PDF [*](https://docs.google.com/document/d/1091KM5lTn7EmMkZiz3LskdaqlnEa7qZo0TT9PLztl3A/edit?tab=t.0#heading=h.lde58ey8iu17)
 
@@ -78,6 +80,8 @@
 * [**Explicación Semana 7**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2007%20-%20Semana%2028%20Abril.pdf)
 * [**Explicación Semana 8**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2008%20-%20Semana%205%20Mayo.pdf)
 * [**Explicación Semana 9**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2009%20-%20Semana%2012%20Mayo.pdf)
+* [**Explicación Semana 10**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2010%20-%20Semana%2019%20Mayo.pdf)
+* [**Explicación Semana 11**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2011%20-%20Semana%2026%20Mayo.pdf)
 
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.
