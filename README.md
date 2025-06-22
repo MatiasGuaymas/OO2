@@ -3,7 +3,7 @@
 ### [**Modelos de parciales**](https://github.com/MatiasGuaymas/OO2/tree/main/Parciales)
 
 ## Repaso
-### Cuadernillo de Actividades PDF [*](https://docs.google.com/document/d/1091KM5lTn7EmMkZiz3LskdaqlnEa7qZo0TT9PLztl3A/edit?tab=t.0#heading=h.lde58ey8iu17)
+### Cuadernillo de Actividades PDF [*](https://github.com/MatiasGuaymas/OO2/blob/main/Cuadernillo%20Semestral%20de%20Actividades%20-%20Repaso%202025.pdf)
 
 > [**Ejercicio 1: Red social**](https://github.com/MatiasGuaymas/OO2/tree/main/Repaso/01-Ejercicio1/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Repaso/Ejercicio01-UML.jpg)
 >
@@ -11,7 +11,7 @@
 
 ## Refactoring
 ### [Bad Smells - Refactorings](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Bad%20Smells-Refactorings.pdf)
-### Cuadernillo de Actividades PDF [*](https://docs.google.com/document/d/1lUh8xz8foVFP4Y-gOHUkTNdBLmdag278sfaSR8iMooA/edit?tab=t.0#heading=h.lde58ey8iu17)
+### Cuadernillo de Actividades PDF [*](https://github.com/MatiasGuaymas/OO2/blob/main/Cuadernillo%20Semestral%20de%20Actividades%20-%20Refactoring%202025.pdf)
 
 > [**Ejercicio 1: Algo huele mal**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio01.md)
 >
@@ -26,7 +26,7 @@
 > [**Ejercicio 6: Árboles binarios**](https://github.com/MatiasGuaymas/OO2/blob/main/Refactoring/Ejercicio06.md)
 
 ## Patrones de diseño
-### Cuadernillo de Actividades PDF [*](https://docs.google.com/document/d/1rK-ZwQNSjzt7lfvTaTGPRCxSj92hN_QhE0vIYjlyek8/edit?tab=t.0)
+### Cuadernillo de Actividades PDF [*](https://github.com/MatiasGuaymas/OO2/blob/main/Cuadernillo%20Semestral%20de%20Actividades%20-%20Patrones%202025.pdf)
 
 > [**Ejercicio 1: Friday the 13th en Java-Usando la librería JSON.simple**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/01-Ejercicio1/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/tree/main/UML/Patrones/Ejercicio01)
 >
@@ -69,6 +69,10 @@
 > [**Ejercicio 20: Construcción de personajes de juegos de rol**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/20-Ejercicio20/src) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio20-UML.png)
 >
 > [**Ejercicio 21: Genealogía salvaje**](https://github.com/MatiasGuaymas/OO2/tree/main/Patrones/21-Ejercicio21/src/main/java/ar/edu/unlp/info/oo2/_Ejercicio21) - [**UML**](https://github.com/MatiasGuaymas/OO2/blob/main/UML/Patrones/Ejercicio21-UML.png)
+
+## Frameworks
+### [Resumen](https://github.com/MatiasGuaymas/OO2/blob/main/Frameworks/Resumen%20-%20Frameworks.pdf)
+### Cuadernillo de Actividades PDF [*](https://github.com/MatiasGuaymas/OO2/blob/main/Cuadernillo%20Semestral%20de%20Actividades%20-%20Frameworks%202025.pdf)
 
 ## Explicaciones Semanales
 * [**Explicación Semana 1**](https://github.com/MatiasGuaymas/OO2/blob/main/Explicaciones/Explicacion%2001%20-%20Semana%2017%20Marzo.txt)
