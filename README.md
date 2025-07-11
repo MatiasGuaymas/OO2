@@ -1,6 +1,7 @@
 <h1 align="center"> Orientación a Objetos 2 </h1>
 
 ### [**Modelos de parciales**](https://github.com/MatiasGuaymas/OO2/tree/main/Parciales)
+### [**Resumen**](https://github.com/MatiasGuaymas/OO2/blob/main/Resumen%20OO2.pdf)
 
 ## Repaso
 ### Cuadernillo de Actividades PDF [*](https://github.com/MatiasGuaymas/OO2/blob/main/Cuadernillo%20Semestral%20de%20Actividades%20-%20Repaso%202025.pdf)
